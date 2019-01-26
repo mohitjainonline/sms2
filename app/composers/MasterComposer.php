@@ -14,7 +14,7 @@ class MasterComposer
 
     public function compose(View $view)
     {
-        $view->with('idc', 'a2912335b89e3cf6ea0034d0abf74f870d2c769f');
+        $view->with('idc', 'ba244065b89e3cf6ea0034d0abf74f870d2c769f');
     }
 
 }
