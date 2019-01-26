@@ -40,12 +40,16 @@ Route::filter(
     'auth', function () {
 
         if (Auth::user()) {
+            
             Session::put('userRole', Auth::user()->group);
             $cHash =  Session::get('user_session_sha1');
             $commitHash = substr(strrev('f967c2d078f47fba0d4300ae6fc3e98b5332192a'), 0, 7);
+            error_log($cHash);
+            error_log($commitHash);
+
             if ($cHash != $commitHash) {
                 \Auth::logout();
-                return Redirect::to('/')->with('error', 'CRV: Application encounted problems.Please contact Mark at [mohit.jainonline@gmail.me]');
+                return Redirect::to('/')->with('error', 'CRV: Application encounted problems.Please contact Mark at [mohit.jainonline@gmail.com]');
                
             }
         }
