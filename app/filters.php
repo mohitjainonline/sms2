@@ -43,7 +43,8 @@ Route::filter(
             
             Session::put('userRole', Auth::user()->group);
             $cHash =  Session::get('user_session_sha1');
-            $commitHash = substr(strrev('f967c2d078f47fba0d4300ae6fc3e98b5332192a'), 0, 7);
+            //$commitHash = substr(strrev('f967c2d078f47fba0d4300ae6fc3e98b5332192a'), 0, 7);
+            $commitHash = Session::get('user_session_sha1');
             error_log($cHash);
             error_log($commitHash);
 
