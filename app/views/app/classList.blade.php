@@ -21,7 +21,8 @@
                             <th>Code</th>
                             <th>Name</th>
                             <th>Description</th>
-                            <th>Bangla/English Combine Pass</th>
+                            <!-- <th>Bangla/English Combine Pass</th> -->
+                            <th>English Pass</th>
                             <th>Action</th>
                         </tr>
                         </thead>

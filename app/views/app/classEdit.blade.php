@@ -28,7 +28,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Bangla/Egnlish subject combine pass? <input type="checkbox"  name="combinePass"  @if($class->combinePass) checked @endif ></label>
+                                <!-- <label>Bangla/Egnlish subject combine pass? <input type="checkbox"  name="combinePass"  @if($class->combinePass) checked @endif ></label> -->
+                                <label>English subject pass? <input type="checkbox"  name="combinePass"  @if($class->combinePass) checked @endif ></label>
                             </div>
                             <div class="clearfix"></div>
                             @if (count($errors) > 0)

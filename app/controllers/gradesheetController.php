@@ -546,7 +546,7 @@ class gradesheetController extends \BaseController {
 
                                     //subject counter for final grade calculation
                                     $subcounter = 0;
-
+                                    $grandPoint = 0;
                                     $banglamark = 0;
                                     $englishmark = 0;
 
@@ -745,9 +745,9 @@ class gradesheetController extends \BaseController {
                                         }
 
                                     }
-
-                                    $grandPoint = ($totalpoint / $subcounter);
-
+                                    if($subcounter > 0){
+                                        $grandPoint = ($totalpoint / $subcounter);
+                                    }
 
                                     if ($isfail) {
                                         $grandGrade = "F";

@@ -41,7 +41,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Bangla/Egnlish subject combine pass? <input type="checkbox"  name="combinePass" ></label>
+                            <!-- <label>Bangla/Egnlish subject combine pass? <input type="checkbox"  name="combinePass" ></label> -->
+                            <label>English subject pass? <input type="checkbox"  name="combinePass" ></label>
                         </div>
 
                         <div class="clearfix"></div>

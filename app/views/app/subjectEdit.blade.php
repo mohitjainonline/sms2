@@ -72,7 +72,8 @@
                                             <label class="control-label" for="stdgroup">Subject Group</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign  blue"></i></span>
-                                                {{ Form::select('subgroup',['N/A'=>'N/A','Bangla'=>'Bangla','English'=>'English'],$subject->subgroup,['class'=>'form-control'])}}
+                                                <!-- {{ Form::select('subgroup',['N/A'=>'N/A','Bangla'=>'Bangla','English'=>'English'],$subject->subgroup,['class'=>'form-control'])}} -->
+                                                {{ Form::select('subgroup',['N/A'=>'N/A','English'=>'English'],$subject->subgroup,['class'=>'form-control'])}}
                                             </div>
                                         </div>
                                     </div>

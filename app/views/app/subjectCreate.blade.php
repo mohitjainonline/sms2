@@ -86,9 +86,9 @@
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign  blue"></i></span>
                                             <select name="subgroup" class="form-control" required >
                                                 <option value="N/A">N/A</option>
-                                                <option value="Bangla">Bangla</option>
+                                                <!-- <option value="Bangla">Bangla</option> -->
                                                 <option value="English">English</option>
-
+                                                
 
                                             </select>
                                         </div>
